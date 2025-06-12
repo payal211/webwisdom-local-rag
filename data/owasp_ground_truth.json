@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the main goal of initiatives within the OWASP GenAI project?",
+    "answer": "The goal of initiatives within the project are to address specific areas of education and research to create practical, executable resources and insights in support of the overall project goals through focused working groups."
+  },
+  {
+    "question": "How many main initiatives are currently listed on the OWASP GenAI initiatives page?",
+    "answer": "There are 5 main initiatives: AI Cyber Threat Intelligence, Secure AI Adoption, AI Red Teaming & Evaluation, Risk and Exploit Data Gathering/Mapping, and Agentic Security Initiative."
+  },
+  {
+    "question": "What is the primary focus of the AI Cyber Threat Intelligence initiative?",
+    "answer": "This initiative aims to explore the capabilities and risks associated with generating day-one vulnerabilities' exploits using various Large Language Models (LLMs), including those lacking ethical guardrails, due to limited actionable data in understanding how different LLMs are being leveraged in exploit generation."
+  },
+  {
+    "question": "Who is the initiative lead for the Secure AI Adoption initiative?",
+    "answer": "Scott Clinton is the initiative lead for the Secure AI Adoption initiative."
+  },
+  {
+    "question": "What does the Secure AI Adoption Initiative form?",
+    "answer": "The Secure AI Adoption Initiative forms a Center of Excellence (CoE) to enhance security frameworks, governance policies, and cross-departmental collaboration for Large Language Models (LLMs) and generative AI."
+  },
+  {
+    "question": "What day and time does the AI Red Teaming & Evaluation initiative hold their weekly meetings?",
+    "answer": "The AI Red Teaming & Evaluation initiative holds weekly meetings on Thursdays at 9am PST."
+  },
+  {
+    "question": "What is the main purpose of the Risk and Exploit Data Gathering, Mapping initiative?",
+    "answer": "This initiative gathers real-world data on vulnerabilities and risks associated with Large Language Models (LLMs), supporting the update of the OWASP Top 10 for LLMs, and maintains mappings between the Top 10 for LLM and other security frameworks."
+  },
+  {
+    "question": "Which advanced frameworks are mentioned in relation to the Agentic Security Initiative?",
+    "answer": "The advanced frameworks mentioned are LangGraph, AutoGPT, CrewAI, and Llama 3's agentic features."
+  },
+  {
+    "question": "What are the three main resource documents/guides currently available?",
+    "answer": "The three main resource documents are: 'Agentic AI – Threats and Mitigations', 'LLM and Gen AI Data Security Best Practices', and 'GenAI Red Teaming Guide'."
+  },
+  {
+    "question": "What does the GenAI Red Teaming Guide provide insights for?",
+    "answer": "The GenAI Red Teaming Guide provides actionable insights for cybersecurity professionals, AI/ML engineers, Red Team practitioners, and risk managers."
+  },
+  {
+    "question": "How are initiative charters reviewed and approved?",
+    "answer": "Each initiative charter is reviewed and approved as outlined in the OWASP Top 10 for LLM Project governance."
+  },
+  {
+    "question": "What type of AI systems does the Agentic Security Initiative focus on?",
+    "answer": "The Agentic Security Initiative explores the emerging security implications of agentic systems, particularly those utilizing advanced frameworks and novel capabilities."
+  },
+  {
+    "question": "What is the main challenge addressed by the AI Cyber Threat Intelligence initiative?",
+    "answer": "The main challenge is that currently limited actionable data exists in understanding how different LLMs are being leveraged in exploit generation."
+  },
+  {
+    "question": "What does the AI Red Teaming & Evaluation initiative aim to establish?",
+    "answer": "This initiative aims to establish comprehensive AI Red Teaming and evaluation guidelines for Large Language Models (LLMs), addressing security vulnerabilities, bias, and user trust through standardized methodology, benchmarks, tools, and frameworks."
+  },
+  {
+    "question": "What communication platform is used for the AI Cyber Threat Intelligence initiative?",
+    "answer": "The AI Cyber Threat Intelligence initiative uses Slack channel #team-llm_AI-cti for communication."
+  },
+  {
+    "question": "What does the Secure AI Adoption initiative ensure regarding AI applications?",
+    "answer": "The initiative ensures that AI applications are adopted safely, ethically, and securely within organizations through strategic planning, training, and the development of standardized protocols."
+  },
+  {
+    "question": "What methodology does the Risk and Exploit Data Gathering initiative use?",
+    "answer": "The initiative uses a robust data collection methodology to enhance AI security guidelines and provide valuable insights for organizations to strengthen their LLM-based systems."
+  },
+  {
+    "question": "What is the focus of the 'LLM and Gen AI Data Security Best Practices' resource?",
+    "answer": "This resource focuses on the critical need for advanced data security practices due to the rapid proliferation of Large Language Models (LLMs) across various industries."
+  },
+  {
+    "question": "What does 'Agentic AI' represent according to the resources?",
+    "answer": "Agentic AI represents an advancement in autonomous systems, increasingly enabled by large language models (LLMs) and generative AI, though agentic AI predates modern LLMs."
+  },
+  {
+    "question": "What types of professionals is the AI Red Teaming & Evaluation initiative seeking?",
+    "answer": "The initiative is seeking AI hackers, tech wizards, code sorcerers, cybersecurity professionals, AI/ML engineers, Red Team practitioners, and risk managers."
+  }
+]
