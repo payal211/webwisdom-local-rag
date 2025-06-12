@@ -27,8 +27,8 @@ A comprehensive Retrieval-Augmented Generation (RAG) system that answers questio
 
 # Method 1: Docker Installation (Recommended)
 
-# ## Download and extract the project files
-# ## Navigate to the project directory
+## Download and extract the project files
+## Navigate to the project directory
 ```bash
 cd webpage-rag-system
 ```
@@ -120,7 +120,7 @@ json{
   }
 }
 
-# 📡 API Endpoints
+## 📡 API Endpoints
 Base URL: http://localhost:5000
 
 MethodEndpointDescriptionGET/Health 
@@ -159,29 +159,29 @@ Content-Type: application/json
     "use_llm": true
 }
 
-# 🤖 Supported Models
-## Embedding Models
+## 🤖 Supported Models
+### Embedding Models
 
 sentence-transformers/all-MiniLM-L6-v2 (Recommended - Fast & Efficient)
 sentence-transformers/all-MiniLM-L12-v2 (Better Quality)
 sentence-transformers/all-mpnet-base-v2 (Best Quality)
 
-# Language Models
+## Language Models
 
 distilgpt2 (Recommended - Lightweight)
 gpt2 (Standard GPT-2)
 microsoft/DialoGPT-medium (Conversational)
 microsoft/DialoGPT-small (Lightweight Conversational)
 
-# 🔍 Technical Details
-## Vector Similarity Method
+## 🔍 Technical Details
+### Vector Similarity Method
 The system uses Cosine Similarity for semantic search:
 
 Formula: similarity = (A · B) / (||A|| × ||B||)
 Range: 0 (no similarity) to 1 (identical)
 Benefits: Handles variable document lengths, computationally efficient
 
-# Text Processing Pipeline
+## Text Processing Pipeline
 
 Web Scraping: Extract clean text from HTML
 Chunking: Split text with configurable size and overlap
@@ -190,46 +190,46 @@ Indexing: Store vectors for similarity search
 Retrieval: Find relevant chunks using cosine similarity
 Generation: Extract or generate answers using LLM
 
-# 📊 Performance Metrics
-# Typical Response Times
+## 📊 Performance Metrics
+### Typical Response Times
 
 Extractive Method: 0.1 - 0.5 seconds
 LLM Enhanced: 1.0 - 3.0 seconds
 Content Loading: 2.0 - 10.0 seconds (depends on URL)
 
-# Memory Usage
+## Memory Usage
 
 Base System: ~500MB
 With Embeddings: ~1.5GB
 With LLM: ~3.0GB
 
-# 🛠️ Configuration Options
-# Advanced Parameters
-# python# Chunking Configuration
+## 🛠️ Configuration Options
+## Advanced Parameters
+### python# Chunking Configuration
 chunk_size = 400        # Characters per chunk (200-1000)
 chunk_overlap = 50      # Overlap between chunks (0-200)
 
-# Retrieval Configuration  
+### Retrieval Configuration  
 top_k = 5              # Number of chunks to retrieve (1-10)
 threshold = 0.2        # Minimum similarity score (0.0-1.0)
 
-# LLM Configuration
+### LLM Configuration
 max_length = 200       # Maximum response length
 temperature = 0.7      # Response creativity (0.1-1.0)
 
-# 🐳 Docker Configuration
-# Services
+## 🐳 Docker Configuration
+## Services
 
-# rag-streamlit: Web UI on port 8501
-# rag-api: REST API on port 5000
+### rag-streamlit: Web UI on port 8501
+### rag-api: REST API on port 5000
 
-# Volumes
+## Volumes
 
 rag_data: Persistent data storage
 rag_models: Model cache
 rag_cache: HuggingFace model cache
 
-# Commands
+## Commands
 ```bash
 # Start services
 docker-compose up
@@ -253,21 +253,21 @@ docker-compose build --no-cache
 netstat -an | grep -E "(5000|8501)"
 ```
 
-# Memory issues
+## Memory issues
 
 Reduce chunk_size and top_k parameters
 Use smaller embedding models
 Increase Docker memory limits
 
 
-# Model download failures
+## Model download failures
 
 Check internet connection
 Clear model cache: rm -rf models/.cache
 Try different model variants
 
 
-# Web scraping issues
+## Web scraping issues
 
 Some sites may block automated requests
 Try different URLs
@@ -275,16 +275,16 @@ Check robots.txt compliance
 
 
 
-# Performance Optimization
+## Performance Optimization
 
-# Speed up responses
+## Speed up responses
 
 Use all-MiniLM-L6-v2 embedding model
 Reduce top_k to 3-5
 Use distilgpt2 for LLM
 
 
-# Improve accuracy
+## Improve accuracy
 
 Use all-mpnet-base-v2 embedding model
 Increase top_k to 7-10
@@ -304,13 +304,13 @@ webpage-rag-system/
 ├── .dockerignore         # Docker ignore patterns
 └── data/                 # Data storage (created at runtime)
     └── models/           # Model cache (created at runtime)
-# 🧪 Testing the System
-## Manual Testing via Streamlit
+## 🧪 Testing the System
+#3# Manual Testing via Streamlit
 
 Open http://localhost:8501
-# Initialize system with default models
+## Initialize system with default models
 Load content from: https://genai.owasp.org/initiatives/
-# Test queries:
+## Test queries:
 
 "What is OWASP GenAI?"
 "What are the main security concerns?"
@@ -318,12 +318,12 @@ Load content from: https://genai.owasp.org/initiatives/
 
 
 
-# API Testing via curl
+## API Testing via curl
 ```bash 
 # Health check
 curl http://localhost:5000/
 ```
-# Full workflow test
+## Full workflow test
 curl -X POST http://localhost:5000/initialize -H "Content-Type: application/json" -d '{"embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "llm_model": "distilgpt2", "use_local_llm": true}'
 
 curl -X POST http://localhost:5000/load_content -H "Content-Type: application/json" -d '{"url": "https://genai.owasp.org/initiatives/"}'
