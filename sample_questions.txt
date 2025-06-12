@@ -1,0 +1,15 @@
+https://www.stanford.edu/research/
+Que: what is Driving Growth at Stanford?
+Que: Tell me Stanford-Grown Ventures
+
+https://www.stanford.edu/academics/
+Que: No of Faculty members
+
+https://genai.owasp.org/introduction-genai-security-project/
+Que: give me OWASP Gen AI Security Project Introduction and Background
+Que: give me Expanding the Scope of Research and Security Solutions in GEN AI
+
+
+https://genai.owasp.org/blog/
+
+Que: how many archives reference we have in this page?

@@ -1,0 +1,7 @@
+{
+  "url": "https://genai.owasp.org/initiatives/",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_count": 14,
+  "embedding_dim": 384,
+  "processed_at": "1749663083.7885904"
+}

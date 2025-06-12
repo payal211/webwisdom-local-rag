@@ -1,0 +1,4 @@
+timestamp,query,method,answer,confidence,chunks_used,processing_time
+2025-06-12 15:51:45,What is research at Stanford?,Both Methods (Comparison),Comparison result,0.0,4,2.503411054611206
+2025-06-12 15:51:52,What is research at Stanford?,Extractive Only,Hewlett-Packard Nvidia YouTube World-Changing Discoveries Stanford’s robust and pioneering research ecosystem is supported by a long-standing partnership between universities and the federal government.,0.7354566136995951,4,0.062224388122558594
+2025-06-12 15:52:03,What is research at Stanford?,LLM Enhanced Only,Research at Stanford involves the development of new ways to improve the Internet as a whole. We are currently the only research organization that can support the research of students and their families. This is one of the most important pieces of research at Stanford and we're proud to be part of.,0.8352181196212768,4,1.8374128341674805
