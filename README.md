@@ -33,31 +33,31 @@ A comprehensive Retrieval-Augmented Generation (RAG) system that answers questio
 cd webpage-rag-system
 ```
 
-# ## Build and run with Docker Compose
+## Build and run with Docker Compose
 ```bash
 docker-compose build --no-cache
 docker-compose up
 ```
-# ## Access the applications
+## Access the applications
 
 Streamlit UI: http://localhost:8501
 REST API: http://localhost:5000
 
 ## 🚀 Quick Start
-# Method 2: Local Installation
+### Method 2: Local Installation
 
-# ## Create conda environment
+## Create conda environment
 ```bash
 conda create -n rag_system python=3.9
 conda activate rag_system
 ```
 
-# ## Install dependencies
+## Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-# ## Run the applications
+## Run the applications
 ```bash
 # Terminal 1: Start API server
 python FLASK_REST_API.py
@@ -67,8 +67,8 @@ python FLASK_REST_API.py
 # Terminal 2: Start Streamlit UI
 streamlit run st_app.py
 ```
-# Access Streamlit UI: http://localhost:8501
-# Access REST API: http://localhost:5000
+### Access Streamlit UI: http://localhost:8501
+### Access REST API: http://localhost:5000
 
 📊 Sample Outputs
 Example 1: OWASP GenAI Security Query
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 
 # 🤖 Supported Models
-# Embedding Models
+## Embedding Models
 
 sentence-transformers/all-MiniLM-L6-v2 (Recommended - Fast & Efficient)
 sentence-transformers/all-MiniLM-L12-v2 (Better Quality)
@@ -174,7 +174,7 @@ microsoft/DialoGPT-medium (Conversational)
 microsoft/DialoGPT-small (Lightweight Conversational)
 
 # 🔍 Technical Details
-# Vector Similarity Method
+## Vector Similarity Method
 The system uses Cosine Similarity for semantic search:
 
 Formula: similarity = (A · B) / (||A|| × ||B||)
